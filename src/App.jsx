@@ -49,11 +49,11 @@ function App() {
       </div>
 
       {answer && (
-        <div className="mt-8 w-full max-w-3xl max-h-[360px] overflow-auto bg-white shadow-2xl p-8 rounded-xl text-black">
+        <div className="mt-8 w-full max-w-3xl max-h-[360px] overflow-auto bg-white shadow-2xl p-6 rounded-xl text-black">
           <h2 className="text-2xl font-semibold mb-4">Answer:</h2>
           <pre className="whitespace-pre-wrap text-lg">{answer}</pre>
         </div>
-      )}
+      )} 
 
       <footer className="mt-8 text-sm text-gray-200 text-center">
         Copyright © Rohit Deka
