@@ -30,34 +30,34 @@ function App() {
   }
 
   return (
-    <div className="h-screen w-full bg-blue-600 text-white font-bold flex flex-col items-center justify-between p-5"> 
-  
-      <header className="text-4xl mb-6">DekaGPT</header>
+    <div className="h-screen w-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white font-sans flex flex-col items-center justify-between p-8">
+      <header className="text-5xl font-bold text-center mb-8">DekaGPT</header>
 
-  
-      <div className="bg-gray-200  p-5 rounded-xl shadow-lg w-full max-w-lg">
+      <div className="bg-gray-200 shadow-2xl p-4 rounded-xl w-full max-w-3xl space-y-2">
         <textarea
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
-          className="w-full h-24 border rounded-md p-2 text-black bg-gray-100" 
+          className="w-full h-25 border border-gray-300 rounded-lg p-4 text-black bg-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500"
           placeholder="Write your question..."
         />
         <button
           onClick={generateAnswer}
-          className="w-full mt-3 bg-gray-600 text-white-200 py-2 rounded-md transition hover:bg-cyan-600 hover:text-black"
+          className="w-full bg-teal-600 text-white py-2 rounded-lg font-semibold text-md  transition duration-300 hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
         >
           Generate
         </button>
       </div>
 
       {answer && (
-        <div className="mt-6 max-h-[500px] overflow-auto w-full max-w-lg bg-gray-200 p-5 rounded-xl shadow-lg text-black">
-          <h2 className="text-xl font-semibold mb-2">Answer:</h2>
-          <pre className="whitespace-pre-wrap">{answer}</pre>
+        <div className="mt-8 w-full max-w-3xl max-h-[360px] overflow-auto bg-white shadow-2xl p-8 rounded-xl text-black">
+          <h2 className="text-2xl font-semibold mb-4">Answer:</h2>
+          <pre className="whitespace-pre-wrap text-lg">{answer}</pre>
         </div>
       )}
 
-      <footer className="text-sm mt-6">Copyright © Rohit Deka</footer> 
+      <footer className="mt-8 text-sm text-gray-200 text-center">
+        Copyright © Rohit Deka
+      </footer>
     </div>
   );
 }
