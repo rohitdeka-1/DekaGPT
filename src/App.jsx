@@ -42,7 +42,7 @@ function App() {
         />
         <button
           onClick={generateAnswer}
-          className="w-full bg-teal-600 text-white py-2 rounded-lg font-semibold text-md  transition duration-300 hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
+          className="w-full bg-gray-600 text-white py-2 rounded-lg font-semibold text-md  transition duration-300 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
         >
           Generate
         </button>
