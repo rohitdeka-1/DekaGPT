@@ -30,8 +30,15 @@ function App() {
   }
 
   return (
+
     <div className="h-screen w-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white font-sans flex flex-col items-center justify-between p-8">
       <header className="text-5xl font-bold text-center mb-8">DekaGPT</header>
+      
+        <div className="mt-8 w-full max-w-3xl min-h-[390px] max-h-[420px] overflow-auto bg-white shadow-2xl p-6 rounded-xl text-black">
+          <h2 className="text-2xl font-semibold mb-4">Answer:</h2>
+          <pre className="whitespace-pre-wrap text-lg">{answer}</pre>
+        </div>
+      
 
       <div className="bg-gray-200 shadow-2xl p-4 rounded-xl w-full max-w-3xl space-y-2">
         <textarea
@@ -48,12 +55,7 @@ function App() {
         </button>
       </div>
 
-      {answer && (
-        <div className="mt-8 w-full max-w-3xl max-h-[420px] overflow-auto bg-white shadow-2xl p-6 rounded-xl text-black">
-          <h2 className="text-2xl font-semibold mb-4">Answer:</h2>
-          <pre className="whitespace-pre-wrap text-lg">{answer}</pre>
-        </div>
-      )} 
+      
 
       <footer className="mt-8 text-sm text-gray-200 text-center">
         Copyright © Rohit Deka
