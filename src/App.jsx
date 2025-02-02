@@ -40,11 +40,11 @@ function App() {
         </div>
       
 
-      <div className="bg-gray-200 shadow-2xl p-4 rounded-xl w-full max-w-3xl space-y-2">
+      <div className="bg-gray-200 shadow-2xl p-2 rounded-xl w-full max-w-3xl space-y-0">
         <textarea
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
-          className="w-full h-25 border border-gray-300 rounded-lg p-4 text-black bg-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500"
+          className="w-full h-25 border border-gray-300 rounded-lg p-1 text-black bg-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500"
           placeholder="Write your question..."
         />
         <button
